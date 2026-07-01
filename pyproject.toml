@@ -1,0 +1,21 @@
+[project]
+name = "codebase-analyzer-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "gitpython>=3.1.50",
+    "langchain>=1.3.11",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.4.8",
+    "langchain-google-genai>=4.2.6",
+    "langchain-huggingface>=1.2.2",
+    "langgraph>=1.2.6",
+    "sentence-transformers>=5.6.0",
+    "tree-sitter>=0.25.2",
+    "tree-sitter-go>=0.25.0",
+    "tree-sitter-rust>=0.24.2",
+]
