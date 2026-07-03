@@ -58,7 +58,7 @@ class ModernAgenticAnalyzer:
             "Always cite the exact 'file_path' and line numbers when explaining code."
         )
 
-        # The brand new wrapper replaces both create_tool_calling_agent AND create_react_agent
+        # This brand new wrapper replaces create_react_agent
         return create_agent(
             model=self.llm, 
             tools=self.tools, 
@@ -82,7 +82,7 @@ class ModernAgenticAnalyzer:
 
                 print("\n🧠 Agent is analyzing and searching...")
                 
-                # LangGraph expects messages in this specific format
+              
                 response = self.agent.invoke(
                     {"messages": [("human", question)]}
                 )
